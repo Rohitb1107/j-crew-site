@@ -1,0 +1,24 @@
+.nav-div {
+  border: 1px solid black;
+  width: 100vw;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 1rem;
+  margin-left: 10rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul h3 {
+  font-size: 2rem;
+  font-weight: 100;
+  margin-right: 2rem;
+}
