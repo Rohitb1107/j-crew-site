@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { Footer } from "./Footer/Footer";
 
 const Home = () => {
   return (
@@ -143,7 +142,6 @@ const Home = () => {
           </div>
         </div>
       </More>
-      <Footer />
     </div>
   );
 };
