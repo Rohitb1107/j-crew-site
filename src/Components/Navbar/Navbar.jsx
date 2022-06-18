@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../Styles/navbar.css";
+import "./navbar.css";
 
 const Navbar = () => {
   return (
     <div className="nav-div">
-      <ul>
+      <ul className="li-part">
         <h3>J.CREW</h3>
         <li>
           <Link to="/">Home</Link>
@@ -23,33 +23,29 @@ const Navbar = () => {
         <li>Swim</li>
         <li>Cashmere</li>
         <li>Stories</li>
-      </ul>
-      <div>
         <img
-          className="iimg"
+          className="search-img"
           src="https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/search-512.png"
           alt=""
         />
         <input type="text" placeholder="Search " className="search" />
-        <Link to="/Signin">
-          {" "}
+        <Link to="#">
           <button id="sign"> Sign In </button>{" "}
         </Link>
 
         <img
-          className="heart"
+          className="heart-img"
           src="https://www.iconpacks.net/icons/2/free-heart-icon-3510-thumb.png"
           alt=""
         />
-        <Link to="/Cart">
-          {" "}
+        <Link to="#">
           <img
-            className="cartimg"
+            className="cart-img"
             src="https://www.kindpng.com/picc/m/443-4431015_website-shopping-bag-icon-hd-png-download.png"
             alt=""
-          />{" "}
+          />
         </Link>
-      </div>
+      </ul>
     </div>
   );
 };

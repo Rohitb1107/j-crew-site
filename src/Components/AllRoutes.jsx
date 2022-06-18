@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./Home";
 import Kids from "./Kids";
 import Mens from "./Mens";
-import Navbar from "./Navbar";
+import Navbar from "./Navbar/Navbar";
 import Womens from "./Womens";
 
 const AllRoutes = () => {
