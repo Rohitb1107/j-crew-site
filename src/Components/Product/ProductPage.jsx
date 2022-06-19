@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-// import "./product.css"
+import "./product.css";
+import { Link } from "react-router-dom";
 // import { Footer } from "./footer/footer";
 
 const ProductPage = () => {
@@ -10,13 +11,14 @@ const ProductPage = () => {
 
   useEffect(() => {
     async function getData() {
-      const data = await fetch(`http://localhost:8060/${name}/${id}`).then(
-        (d) => d.json()
-      );
+      const data = await fetch(
+        `https://ancient-dawn-26797.herokuapp.com/shop_all/${id}`
+      ).then((d) => d.json());
       setpro(data);
     }
     getData();
   }, []);
+
   const getLocalItems = () => {
     let list = localStorage.getItem("cartItms");
     console.log(list);
@@ -26,12 +28,15 @@ const ProductPage = () => {
       return [];
     }
   };
+
   const [cart, setCart] = useState(getLocalItems());
   const handleClick = (item) => {
     setCart([...cart, item]);
     // window.localStorage.setItem("cartItms",JSON.stringify(cart));
     console.log(cart);
+    alert("Item added to cart successfully!");
   };
+
   useEffect(() => {
     localStorage.setItem("cartItms", JSON.stringify(cart));
   }, [cart]);
@@ -75,9 +80,11 @@ const ProductPage = () => {
               handleClick(product);
             }}
           >
-            {" "}
-            ADD TO BAG{" "}
+            ADD TO CART
           </button>
+          <Link to="/cart">
+            <button className="bag">GO TO CART</button>
+          </Link>
           <hr className="hr" />
           <h4> Prices include duties and taxes </h4>
           <div> </div>
@@ -95,15 +102,14 @@ const ProductPage = () => {
           </ul>
           <h3> Our Fabrics, Re-imagined </h3>
           <h4 className="fab">
-            {" "}
             This item contains a sustainable material, like organic cotton,
-            recycled polyester, or with certifications like Fair Trade.{" "}
+            recycled polyester, or with certifications like Fair Trade.
           </h4>
           <hr className="hr" />
         </div>
       </div>
       <br />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

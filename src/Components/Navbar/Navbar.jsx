@@ -38,7 +38,7 @@ const Navbar = () => {
           src="https://www.iconpacks.net/icons/2/free-heart-icon-3510-thumb.png"
           alt=""
         />
-        <Link to="#">
+        <Link to="/cart">
           <img
             className="cart-img"
             src="https://www.kindpng.com/picc/m/443-4431015_website-shopping-bag-icon-hd-png-download.png"

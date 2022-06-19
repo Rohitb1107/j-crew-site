@@ -7,7 +7,7 @@ const Womens = () => {
   useEffect(() => {
     async function getData() {
       const data = await fetch(
-        "https://ancient-dawn-26797.herokuapp.com/shop_all?_limit=12"
+        "https://ancient-dawn-26797.herokuapp.com/shop_all"
       ).then((d) => d.json());
       setbed(data);
     }
@@ -49,9 +49,9 @@ const Womens = () => {
       <div id="div-6">
         {bed.map((e) => {
           return (
-            <Link to={`/women/${e.id}/shop_all`} id="card-1">
+            <Link to={`/womens/${e.id}`} id="card-1">
               <div id="img-1">
-                <img id="img-i-1" src={e.image} alt="" />
+                <img id="img-i-1" src={e.image} alt="product-iage" />
                 <button id="button-1">QUICK SHOP</button>
               </div>
               <div id="demo-1">

@@ -283,74 +283,7 @@ img {
   border: 1px solid black;
 }
 
-#address-box {
-  border: 1px solid black;
-  height: 200px;
-  width: 450px;
-}
-#ad-data {
-  text-align: left;
-}
-#address-2 {
-  border: 1px solid black;
-  height: 800px;
-  width: 450px;
-  margin-top: 50px;
-}
-#address-2 > form > input {
-  align-items: left;
 
-  width: 200px;
-  height: 30px;
-}
-#country {
-  width: 400px;
-  margin-top: 25px;
-  margin-right: 210px;
-}
-#space-add {
-  margin-right: 130px;
-  margin-top: 25px;
-}
-#add-m2 {
-  margin-top: 25px;
-}
-#add-mob {
-  border: 1px solid black;
-  height: 40px;
-  width: 400px;
-  margin-top: 70px;
-  margin-left: 15px;
-  display: flex;
-}
-#img-ind {
-  border: 1px solid black;
-  height: 100%;
-  width: 40px;
-}
-#ind-inp {
-  width: 100%;
-}
-#tick-add {
-  border: 1px solid black;
-  height: 100px;
-  width: 400px;
-  margin-top: 50px;
-  margin-left: 15px;
-  text-align: left;
-}
-#add-btn {
-  border: 1px solid blue;
-  height: 50px;
-  width: 400px;
-  margin-right: 20px;
-  margin-top: 25px;
-  color: white;
-  background-color: blue;
-}
-#add-btn > h4 {
-  padding-bottom: 10px;
-}
 
 /* sign */
 #signup {

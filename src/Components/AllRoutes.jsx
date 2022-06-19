@@ -6,7 +6,9 @@ import Mens from "./Mens";
 import Navbar from "./Navbar/Navbar";
 import Womens from "./Womens";
 import { Footer } from "./Footer/Footer";
-import ProductPage from "./ProductPage";
+import ProductPage from "./Product/ProductPage";
+import Cart from "./Cart";
+import { Address } from "./Address/Address";
 
 const AllRoutes = () => {
   return (
@@ -17,7 +19,9 @@ const AllRoutes = () => {
         <Route path="/mens" element={<Mens />}></Route>
         <Route path="/womens" element={<Womens />}></Route>
         <Route path="/kids" element={<Kids />}></Route>
-        <Route path="/kids/:id/:name" element={<ProductPage />}></Route>
+        <Route path="/cart" element={<Cart />}></Route>
+        <Route path="/address" element={<Address />}></Route>
+        <Route path="/womens/:id" element={<ProductPage />}></Route>
       </Routes>
       <Footer />
     </div>
