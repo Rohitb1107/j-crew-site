@@ -1,49 +1,39 @@
 .add-div {
-  border: 2px solid red;
   width: 23.7%;
   margin: auto;
   margin-top: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 2rem;
 }
 
 #address-box {
-  border: 1px solid black;
-  height: 200px;
-  width: 450px;
 }
 #ad-data {
   text-align: left;
 }
 #address-2 {
-  border: 1px solid black;
-  height: 800px;
-  width: 450px;
   margin-top: 50px;
+  margin-left: 0.5rem;
 }
 #address-2 > form > input {
   align-items: left;
-  width: 200px;
-  height: 20px;
 }
 #country {
   width: 400px;
-  margin-top: 25px;
-  margin-right: 210px;
+  margin-top: 20px;
 }
 #space-add {
-  margin-right: 130px;
   margin-top: 25px;
 }
 #add-m2 {
   margin-top: 25px;
 }
 #add-mob {
-  border: 1px solid black;
-  height: 40px;
-  width: 400px;
-  margin-top: 70px;
-  margin-left: 15px;
+  width: 95%;
+  margin-top: 30px;
   display: flex;
 }
+
 #img-ind {
   border: 1px solid black;
   height: 100%;
@@ -56,18 +46,22 @@
   border: 1px solid black;
   height: 100px;
   width: 400px;
-  margin-top: 50px;
-  margin-left: 15px;
+  margin-top: 40px;
+  margin-left: 10px;
   text-align: left;
 }
 #add-btn {
-  border: 1px solid blue;
-  height: 50px;
-  width: 400px;
-  margin-right: 20px;
-  margin-top: 25px;
-  color: white;
-  background-color: blue;
+  width: 90%;
+  padding: 1rem;
+  font-weight: bold;
+  border: none;
+  background-color: #222;
+  border-radius: 4px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  margin-left: 0.9rem;
+  margin-top: 1rem;
 }
 #add-btn > h4 {
   padding-bottom: 10px;

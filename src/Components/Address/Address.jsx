@@ -21,8 +21,8 @@ export const Address = () => {
       <div id="address-box">
         <h3>Delivery Method</h3>
         <div id="ad-data">
-          <input type="radio" /> <span>STANDARD Delivery </span> <br />{" "}
-          <span>Delivered on or before May 31</span> <b>INR 2102</b>
+          <input type="radio" />
+          <div>Delivered on or before May 31</div> <b>INR 2102</b>
         </div>
       </div>
       <div id="address-2">
@@ -68,7 +68,8 @@ export const Address = () => {
           />{" "}
           <input type="text" placeholder="City" /> <br />
           <div id="space-add">
-            <input onChange={handlechange} type="checkbox" />{" "}
+            <input onChange={handlechange} type="checkbox" />
+            <br />
             <label htmlFor="">Save this address for my next purchase</label>
           </div>
           <div id="add-mob">
@@ -101,7 +102,7 @@ export const Address = () => {
             consent to eShoWorld processing my information in accordance with
             the privacy statement and cookie policy
           </div>
-          <Link to="/Payment">
+          <Link to="/payment">
             <button id="add-btn">
               <p>CONTINUE TO PAYMENT</p>
             </button>
