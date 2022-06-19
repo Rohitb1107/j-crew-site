@@ -7,7 +7,7 @@ const Mens = () => {
   useEffect(() => {
     async function getData() {
       const data = await fetch(
-        "https://ancient-dawn-26797.herokuapp.com/men_top_rated?_limit=12"
+        "https://ancient-dawn-26797.herokuapp.com/formen"
       ).then((d) => d.json());
       setbed(data);
     }

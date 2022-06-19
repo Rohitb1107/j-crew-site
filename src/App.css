@@ -283,8 +283,6 @@ img {
   border: 1px solid black;
 }
 
-
-
 /* sign */
 #signup {
   width: 350px;
@@ -352,7 +350,9 @@ img {
   text-decoration: none;
   color: rgb(75, 118, 225);
 }
-#div-6 {
-  margin-bottom: 12rem;
+
+.thanks-img {
+  width: 35%;
+  margin-left: 35rem;
 }
 

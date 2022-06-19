@@ -5,11 +5,9 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding: 2rem;
 }
-
-#address-box {
-}
 #ad-data {
   text-align: left;
+  margin-top: 1rem;
 }
 #address-2 {
   margin-top: 50px;
@@ -33,21 +31,24 @@
   margin-top: 30px;
   display: flex;
 }
-
+.input-box {
+  width: 8.5rem;
+}
 #img-ind {
   border: 1px solid black;
   height: 100%;
-  width: 40px;
+  width: 50px;
 }
 #ind-inp {
   width: 100%;
 }
 #tick-add {
   border: 1px solid black;
-  height: 100px;
-  width: 400px;
+  height: 5rem;
+  width: 95%;
+  /* width: 400px; */
   margin-top: 40px;
-  margin-left: 10px;
+  /* margin-left: 10px; */
   text-align: left;
 }
 #add-btn {
@@ -65,4 +66,8 @@
 }
 #add-btn > h4 {
   padding-bottom: 10px;
+}
+
+.check-box-btn {
+  width: 30px;
 }
