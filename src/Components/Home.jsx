@@ -248,7 +248,8 @@ const PinkDiv = styled.div`
     border: none;
     background: transparent;
     border-bottom: 2px solid black;
-    font-size: 13px;
+    font-size: 1rem;
+    text-align: start;
     font-family: "DM Sans", sans-serif;
     font-weight: bold;
     cursor: pointer;
@@ -259,12 +260,16 @@ const PinkDiv = styled.div`
     text-align: start;
     width: 80%;
     margin-top: 100px;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+
     /* margin-bottom: 50px; */
     & h1 {
       font-family: "EB Garamond", serif;
       font-weight: lighter;
-      margin-left: 15px;
+      margin-left: 20px;
       font-size: 50px;
+      margin-bottom: 5rem;
     }
   }
   .card {
@@ -276,7 +281,7 @@ const PinkDiv = styled.div`
     justify-content: space-around; */
     & h3 {
       font-weight: lighter;
-      font-size: 18px;
+      font-size: 1.2rem;
     }
     & button {
       border: none;
@@ -302,19 +307,19 @@ const More = styled.div`
   h2 {
     font-family: "EB Garamond", serif;
     font-weight: lighter;
-    font-size: 30px;
+    font-size: 2.2rem;
+    margin-left: 2rem;
   }
   & button {
     border: none;
     background: transparent;
     border-bottom: 2px solid black;
-    font-size: 13px;
+    font-size: 1rem;
     font-family: "DM Sans", sans-serif;
     font-weight: bold;
     /* width: 170px; */
     text-align: start;
     cursor: pointer;
-    font-size: 11px;
   }
 
   .card-con {
